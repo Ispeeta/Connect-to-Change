@@ -1,0 +1,846 @@
+
+::root {
+  --background: pink;
+}
+
+
+body {
+  margin: 0;
+  background: linear-gradient(black,#941313);
+  font-family: "Work Sans", sans-serif;
+}
+/* nav bar styles start here */
+
+ header {
+     background-color: black;
+   text-align: center;
+     position: fixed;
+     width: 100%;
+/*z-index:999;*/
+     top: 0;
+   }
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: black;
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out; 
+}
+nav ul {
+  margin: 0;
+  padding: 0; 
+     list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-family: 'Raleway','sans-serif';
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover {
+  color: #941313;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+ transform: scale(1,1);
+}
+.nav-toggle-label {
+  color: white;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px; 
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*FOR LARGER SCREENS */
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    top:0;
+   /* height: 120px;*/
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    grid-column: 2 / 3;
+    /*
+    float: left;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin-left: 1em;
+  display: flex;
+  */
+  }
+  
+  nav {
+    padding-left: 10px;
+   all: unset; /* this causes issues with Edge, since it's unsupported */
+    
+    /* the following lines are not from my video, but add Edge support */
+   position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+  }
+  
+  nav ul {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  nav li {
+   /* margin-left: 3em;*/
+   display: inline-block;
+   margin-left: 60px;
+   padding-top: 10px;
+   padding-bottom: 2px;
+   position: relative;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 7px;
+    background: #941313;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: all ease-in-out 250ms;
+    /*transition: transform ease-in-out 250ms;*/
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+  /*INTRO AND CIRCLES */
+
+  .intro h1 {
+    color: white;
+    font-family: "Raleway", "";
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 175px;
+    padding-left: 100px;
+    padding-right: 120px;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+  .links h1 {
+    font-family: "Raleway", " ";
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .circle-1 {
+    color: white;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    font-size: 15px;
+    background: black;
+    position: inline-block;
+    box-shadow: 0 0 10px 5px #c60c30;
+  }
+  .circle-1 h1 {
+    padding-top: 10px;
+  }
+  .circle-1 a {
+    font-size: 18px;
+    padding-top: 100px;
+    color: white;
+  }
+  .circle-1 a:hover {
+    font-weight: bold;
+  }
+  .circles {
+    color: white;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    font-size: 15px;
+    background: black;
+    position: inline-block;
+    box-shadow: 0 0 10px 5px #c60c30;
+  }
+  .circles h1 {
+    padding-top: 20px;
+  }
+  .circles a {
+    font-size: 18px;
+    padding-top: 100px;
+    color: white;
+  }
+  .circles a:hover {
+    font-weight: bold;
+  }
+  @media screen and (max-width: 640px) {
+    .intro h1 {
+      padding-top: 175px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .links {
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      padding-left: 35px;
+      padding-right: 20px;
+    }
+  }
+  /*YOUNG CANADIANS SAYING */
+  .about-image {
+  /*position: relative;
+  display: inline-block; /* Make the width of box same as image */
+  float: right;
+  z-index:1;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-right: 30px;
+  }
+  .about-image .overlay {
+    font-family: "Raleway", "";
+    /*
+    position: absolute;
+    */
+  bottom: 0px;
+  left: 0px;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 100%; /* Set the width of the positioned div */
+        height: 5%;
+  }
+  .overlay a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Raleway", "";
+    text-align: left;
+  }
+  .overlay a:hover {
+    color: #941313;
+    transition: linear .4s;
+  }
+
+  .further h1 {
+    color: white;
+    font-family: "Raleway", "";
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 75px;
+    padding-right: 10px;
+    padding-left: 70px;
+  
+  }
+  .further h2 {
+    color: white;
+    font-family: "Raleway", "";
+    font-weight: bold;
+    font-size: 38px;
+    padding-right: 80px;
+    padding-left: 70px;
+  }
+
+  .further {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 640px) {
+  .about-image {
+    justify-content: center;
+    display: inline-block;
+  }
+  .further h1 {
+    padding-top: 200px;
+    display: inline;
+  }
+  }
+  /*ABOUT PAGE */
+ .whole {
+  padding-top: 175px;
+  padding-left: 80px;
+ }
+  .whole h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  .whole p {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .profile_img {
+    float: right;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 2px #941313;
+    margin-right: 80px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ready {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    .ready {
+      display: inline;
+    }
+  }
+  
+  .join {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding: 30px;
+  }
+  .join-button {
+    background: black;
+    box-shadow: 5px 5px 0 #941313;
+    color: white;
+  }
+  .join-button:hover {
+    background: #941313;
+    color: white;
+
+  }
+  .join-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Raleway", 'times new roman';
+    font-weight: bold;
+    text-shadow: 1px 1px 0 black;
+  }
+  @media screen and (max-width: 640px) {
+    .whole {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .profile_img {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+ /*CONTACT*/
+
+ .parallax {
+  /* The image used */
+  background-image: url("/Users/hahmed/Desktop/Connect-to-Change/img/joinus.gif");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.button  {
+  color: white;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 15px;
+    background: black;
+    position: inline-block;
+    box-shadow: 0 0 10px 5px #c60c30;
+    text-decoration: none;
+    cursor: pointer;
+  transition: all 0.3s ease-out;
+ 
+}
+
+.btn lightbox-201405305051235 {
+  color: white;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 15px;
+    background: black;
+    position: inline-block;
+    box-shadow: 0 0 10px 5px #c60c30;
+    text-decoration: none;
+    cursor: pointer;
+  transition: all 0.3s ease-out;
+ 
+}
+
+.button h1 {
+  font-family:'Raleway','serif';
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.button:hover {
+  background: #941313;
+}
+/*
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.button:hover {
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+*/
+.button:hover {
+  position: relative;
+  overflow: hidden;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+  
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2020-6-10 21:41:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 80%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+.submit-app {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.submit-app:hover {
+  color: #941313;
+}
+
+@media screen and (max-width: 600px) {
+    
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+    top: -20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box {
+    display: inline-block;
+    justify-content: center;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .button {
+
+    display: inline-block;
+    
+  }
+}
+
+  /*FOOTER*/ 
+  .footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+  }
+  .inner_footer .logo_container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    
+  }
+  .inner_footer .logo_container img{
+    width: 100px; 
+    height: auto;
+  }
+  .inner_footer .footer_third {
+    width: calc(21.66666667% - 20px);
+    margin-right: 30px;
+    float: left;
+    height: 100%
+  }
+  .inner_footer .footer_third:last-child {
+    margin-right: 0; 
+  }
+  .inner_footer .footer_third h1 {
+    font-family: "Raleway", "times new roman";
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .inner_footer .footer_third a {
+    text-decoration: none;
+    font-family: "Raleway", "times new roman";
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 15px;
+    /*text-transform: lowercase;*/
+     
+  }
+  .inner_footer .footer_third a:hover {
+    color: #941313;
+    transition: ease .6s;
+  }
+  .inner_footer .footer_third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+  .inner_footer .footer_third span {
+    color: white;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+  }
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .email p {
+    display: block;
+    padding-bottom: 10px;
+  }
+   .txtb {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: black;
+    background: white;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+ }
+ input .btn {
+   font-family: 'Raleway',serif;
+   color: black;
+   font-size: 100px;
+   width: 20px;
+   height: 10px;
+   background-color: grey;
+
+ }
+ .btn:hover{
+color: #941313;
+ }
+
+ @media only screen and (max-width: 600px) {
+   .footer .inner_footer {
+     width: 90%;
+   }
+   .inner_footer .logo_container,
+ .inner_footer .footer_third {
+     width: 100%;
+     margin-bottom: 30px;
+   }
+ }
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
