@@ -411,7 +411,7 @@ nav a:hover {
 
  .parallax {
   /* The image used */
-  background-image: url("/Users/hahmed/Desktop/Connect-to-Change/img/joinus.gif");
+  background-image: url("img/joinus.gif");
 
   /* Set a specific height */
   min-height: 500px; 
