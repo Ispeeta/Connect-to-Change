@@ -328,7 +328,7 @@ nav a:hover {
   overflow: hidden;
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .about-image {
   display: inline;
 
@@ -364,7 +364,7 @@ nav a:hover {
     justify-content: center;
     text-align: center;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     .ready {
       display: inline;
     }
@@ -697,7 +697,7 @@ nav a:hover {
   color: #941313;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     
   .modal__inner {
     width: 90%;
@@ -706,7 +706,7 @@ nav a:hover {
     top: -20%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .box {
     display: inline-block;
     justify-content: center;
