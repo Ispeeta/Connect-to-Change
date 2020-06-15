@@ -269,72 +269,71 @@ nav a:hover {
       padding-right: 20px;
     }
   }
-  /*YOUNG CANADIANS SAYING */
-  .about-image {
-  /*position: relative;
-  display: inline-block; /* Make the width of box same as image */
+/*YOUNG CANADIAN"S SAYING*/
+.about-image {
   float: right;
   z-index:1;
   margin-top: 75px;
   margin-bottom: 75px;
   margin-right: 30px;
   }
+  .resist {
+    width: 340px;
+    height: 480px;
+    vertical-align: middle;
+  }
   .about-image .overlay {
-    font-family: "Raleway", "";
-    /*
-    position: absolute;
-    */
+  font-family: "Raleway", "";
   bottom: 0px;
   left: 0px;
-        background: rgba(0, 0, 0, 0.8);
-        font-family: Arial,sans-serif;
-        color: #fff;
-        width: 100%; /* Set the width of the positioned div */
-        height: 5%;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 100%; /* Set the width of the positioned div */
+  height: 5%;
   }
-  .overlay a {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Raleway", "";
-    text-align: left;
-  }
-  .overlay a:hover {
-    color: #941313;
-    transition: linear .4s;
-  }
-
-  .further h1 {
-    color: white;
-    font-family: "Raleway", "";
-    font-weight: bold;
-    font-size: 40px;
-    padding-top: 75px;
-    padding-right: 10px;
-    padding-left: 70px;
   
+  .overlay a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Raleway", "";
+  text-align: left;
   }
-  .further h2 {
-    color: white;
-    font-family: "Raleway", "";
-    font-weight: bold;
-    font-size: 38px;
-    padding-right: 80px;
-    padding-left: 70px;
+  
+  .overlay a:hover {
+  color: #941313;
+  transition: linear .4s;
+  }
+  
+  .further {
+  color: white;
+  font-family: "Raleway", "";
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 75px;
+  padding-right: 10px;
+  padding-left: 70px;
+  }
+  
+  .further2 {
+  color: white;
+  font-family: "Raleway", "";
+  font-weight: bold;
+  font-size: 38px;
+  padding-right: 80px;
+  padding-left: 70px;
+  }
+  
+  .further2 {
+  overflow: hidden;
   }
 
-  .further {
-    overflow: hidden;
-  }
-  @media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   .about-image {
-    justify-content: center;
-    display: inline-block;
-  }
-  .further h1 {
-    padding-top: 200px;
-    display: inline;
-  }
-  }
+  display: inline;
+
+    }
+}
   /*ABOUT PAGE */
  .whole {
   padding-top: 175px;
