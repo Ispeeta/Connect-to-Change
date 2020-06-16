@@ -1,0 +1,11 @@
+[[build]]
+  functions = functions # must specify a functions folder for this to work
+[[plugins]]
+  package = netlify-plugin-search-index
+    # all inputs is optional, we just show you the defaults below
+    # [plugins.inputs]
+      # ignore = ["/ignore-this-file.html"] # don't index this file
+      # generatedFunctionName = search # change the name of generated folder in case of conflicts, use `null` to turn off
+      # publishDirJSONFileName = searchIndex # also use null to turn off
+      
+      
