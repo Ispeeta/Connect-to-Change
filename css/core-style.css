@@ -390,12 +390,13 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-.more .gazette-post-tag {
+
+ .more .gazette-post-tag {
 text-align: center;
 size: 20px;
 
 }
-.more .gazette-post-tag:hover {
+ .more .gazette-post-tag:hover {
     transition: ease-in-out .5s;
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
