@@ -1,3 +1,5 @@
+* { margin:0; padding:0; }
+
 
 ::root {
   --background: pink;
@@ -648,7 +650,9 @@ padding-left: 100px;
     top: -20%;
   }
 }
-@media screen and (max-width: 640px) {
+@medi
+
+a screen and (max-width: 640px) {
   .box {
     display: inline-block;
     justify-content: center;
