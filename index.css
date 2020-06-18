@@ -29,7 +29,7 @@ nav {
   position: absolute;
   text-align: left;
   top: 100%;
-  left: 0;
+  left: 1;
   background: black;
   transform: scale(1,0);
   transform-origin: top;
@@ -236,10 +236,15 @@ nav a:hover {
       padding-right: 50px;
     }
     .links {
-      display: inline;
+      display: inline-block;
       justify-content: center;
         text-align: center;
-        padding-bottom: 0;
+        width: 100vw;
+        
+    }
+    .circles {
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -285,16 +290,16 @@ font-family: "Raleway", "";
 font-family: 'Raleway','sans-serif';
 color: white;
 text-align: center;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 30px;
+padding-right: 30px;
 
   }
   .further h2 {
     font-family: 'Raleway','sans-serif';
     color: white;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   /*LARGE SCREENS*/
   @media screen and (min-width: 800px) {
@@ -346,18 +351,6 @@ padding-left: 100px;
     justify-content: center;
     text-align: center;
   }
-  @media screen and (max-width: 640px) {
-    .profile_img {
-      display: inline;
-      justify-content: center;
-      text-align: center;
-    }
-    .ready {
-      display: inline;
-      padding:0;
-      margin:0;
-    }
-  }
   
   .join {
     text-align: center;
@@ -385,7 +378,17 @@ padding-left: 100px;
     text-shadow: 1px 1px 0 black;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 700px) {
+    .profile_img {
+      display: inline;
+      justify-content: center;
+      text-align: center;
+    }
+    .ready {
+      display: inline;
+      padding:0;
+      margin:0;
+    }
     .whole {
       padding-left: 20px;
       padding-right: 20px;
@@ -659,7 +662,7 @@ padding-left: 100px;
       padding-right: 20px;
   }
   .button {
-    display: inline;
+    display: inline-block;
   }
 }
 
