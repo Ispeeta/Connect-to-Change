@@ -8,12 +8,12 @@ body {
   margin: 0;
   background: linear-gradient(black,#941313);
   font-family: "Work Sans", sans-serif;
+  position: relative
 }
-.container {
-  width: 100vw;
-  right: 0;
-  left: 0;
+html, body {
+  overflow-x: hidden;
 }
+
 /* nav bar styles start here */
 
  header {
