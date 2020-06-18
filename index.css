@@ -1,4 +1,4 @@
-* { margin:0; padding:0; }
+
 
 
 ::root {
@@ -650,9 +650,8 @@ padding-left: 100px;
     top: -20%;
   }
 }
-@medi
 
-a screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .box {
     display: inline-block;
     justify-content: center;
