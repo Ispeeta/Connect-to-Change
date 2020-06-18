@@ -230,16 +230,16 @@ nav a:hover {
     font-weight: bold;
   }
   @media screen and (max-width: 640px) {
+    .intro h1 {
+      padding-top: 175px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
     .links {
-      display: inline-block;
+      display: inline;
       justify-content: center;
         text-align: center;
         padding-bottom: 0;
-    }
-    .circles {
-  
-      display: inline-block;
-      
     }
   }
 
@@ -316,7 +316,6 @@ padding-left: 100px;
   }
    
 
-  /*ABOUT PAGE */
     /*ABOUT PAGE */
  .whole {
   padding-top: 175px;
@@ -349,6 +348,7 @@ padding-left: 100px;
   }
   @media screen and (max-width: 640px) {
     .profile_img {
+      display: inline;
       justify-content: center;
       text-align: center;
     }
@@ -389,10 +389,6 @@ padding-left: 100px;
     .whole {
       padding-left: 20px;
       padding-right: 20px;
-    }
-    .profile_img {
-      justify-content: center;
-      text-align: center;
     }
   }
 
@@ -656,14 +652,14 @@ padding-left: 100px;
 
 @media screen and (max-width: 640px) {
   .box {
-    display: inline-block;
+    display: inline;
     justify-content: center;
       text-align: center;
       padding-left: 20px;
       padding-right: 20px;
   }
   .button {
-    display: inline-block;
+    display: inline;
   }
 }
 
