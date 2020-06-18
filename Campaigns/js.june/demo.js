@@ -409,8 +409,8 @@
     class Revealer {
         constructor(el) {
             this.DOM = {el: el};
-            this.DOM.el.style.width = `calc(100vw * ${Math.cos(8 * Math.PI/180)} + 100vh * ${Math.sin(8 * Math.PI/180)})`;
-            this.DOM.el.style.height = `calc(100vw * ${Math.sin(8 * Math.PI/180)} + 100vh * ${Math.cos(8 * Math.PI/180)})`;
+            this.DOM.el.style.width = `calc(100% * ${Math.cos(8 * Math.PI/180)} + 100vh * ${Math.sin(8 * Math.PI/180)})`;
+            this.DOM.el.style.height = `calc(100% * ${Math.sin(8 * Math.PI/180)} + 100vh * ${Math.cos(8 * Math.PI/180)})`;
         }
     }
 

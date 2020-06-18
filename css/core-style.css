@@ -1165,7 +1165,7 @@ textarea.form-control {
   }
   /* :: 14.0 Footer Area CSS */
   .footer {
-    width: 100vw;
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 50px 0px;

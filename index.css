@@ -4,12 +4,15 @@
 ::root {
   --background: pink;
 }
-
-
 body {
   margin: 0;
   background: linear-gradient(black,#941313);
   font-family: "Work Sans", sans-serif;
+}
+.container {
+  width: 100%;
+  right: 0;
+  left: 0;
 }
 /* nav bar styles start here */
 
@@ -666,7 +669,7 @@ padding-left: 100px;
 
   /*FOOTER*/ 
   .footer {
-    width: 100vw;
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 50px 0px;
