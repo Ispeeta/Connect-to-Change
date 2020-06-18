@@ -25,7 +25,6 @@ nav {
   top: 100%;
   left: 0;
   background: black;
-  width: 100%;
   transform: scale(1,0);
   transform-origin: top;
   transition: transform 400ms ease-in-out; 
@@ -113,14 +112,6 @@ nav a:hover {
   
   .logo {
     grid-column: 2 / 3;
-    /*
-    float: left;
-    padding-left: 60px;
-    padding-top: 10px;
-    padding-bottom: 2px;
-    margin-left: 1em;
-  display: flex;
-  */
   }
   
   nav {
@@ -233,17 +224,10 @@ nav a:hover {
     font-weight: bold;
   }
   @media screen and (max-width: 640px) {
-    .intro h1 {
-      padding-top: 175px;
-    padding-left: 50px;
-    padding-right: 50px;
-    }
     .links {
       display: inline-block;
       justify-content: center;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
         padding-bottom: 0;
     }
     .circles {
@@ -358,8 +342,14 @@ padding-left: 100px;
     text-align: center;
   }
   @media screen and (max-width: 640px) {
+    .profile_img {
+      justify-content: center;
+      text-align: center;
+    }
     .ready {
       display: inline;
+      padding:0;
+      margin:0;
     }
   }
   
