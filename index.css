@@ -239,11 +239,12 @@ nav a:hover {
       display: inline;
       justify-content: center;
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .circles {
-      display: inline-block;
+      vertical-align: top;
+      display: block;
+      padding-top: 10px;
+      margin: auto;
     }
   }
 
