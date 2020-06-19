@@ -236,15 +236,14 @@ nav a:hover {
       padding-right: 50px;
     }
     .links {
-      display: inline-block;
+      display: inline;
       justify-content: center;
         text-align: center;
-        width: 100vw;
-        
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .circles {
-      justify-content: center;
-      text-align: center;
+      display: inline-block;
     }
   }
 
@@ -662,6 +661,9 @@ padding-left: 100px;
       padding-right: 20px;
   }
   .button {
+    display: inline-block;
+  }
+  .btn lightbox-201405305051235 {
     display: inline-block;
   }
 }
