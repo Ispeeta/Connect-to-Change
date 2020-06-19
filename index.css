@@ -241,6 +241,7 @@ nav a:hover {
         text-align: center;
     }
     .circles {
+      line-height: 30px;
       vertical-align: top;
       display: block;
       padding-top: 10px;
@@ -380,9 +381,11 @@ padding-left: 100px;
 
   @media screen and (max-width: 700px) {
     .profile_img {
-      display: inline;
-      justify-content: center;
-      text-align: center;
+      line-height: 30px;
+      vertical-align: top;
+      display: block;
+      padding-top: 10px;
+      margin: auto;
     }
     .ready {
       display: inline;
@@ -662,10 +665,18 @@ padding-left: 100px;
       padding-right: 20px;
   }
   .button {
-    display: inline-block;
+    line-height: 30px;
+      vertical-align: top;
+      display: block;
+      padding-top: 10px;
+      margin: auto;
   }
   .btn lightbox-201405305051235 {
-    display: inline-block;
+    line-height: 30px;
+      vertical-align: top;
+      display: block;
+      padding-top: 10px;
+      margin: auto;
   }
 }
 
