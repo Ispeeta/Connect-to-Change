@@ -325,48 +325,45 @@ padding-left: 100px;
 }
   }
   
-    /*ABOUT PAGE */
- .whole {
-  padding-top: 175px;
-  padding-left: 80px;
- }
-  .whole h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-  }
-  .whole p {
-    color: #fff;
-    text-align: center;
-  }
-  
-  .profile_img {
-    float: right;
-    border-radius: 100%;
-    box-shadow: 0 0 5px 2px #941313;
-    margin-right: 80px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .ready {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .join {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding: 30px;
-  }
-  .join-button {
+     /*ABOUT PAGE */
+
+.whole {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.whole h1 {
+  font-family: 'Raleway','sans-serif';
+  text-align: center;
+}
+.about-image1 {
+  text-align: center;
+}
+.profile-img {
+  background-image: url(img/ispeeta.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  display: inline-block;
+  box-shadow: 5px 5px 0 #000;
+}
+.ready {
+  display: inline;
+      padding:0;
+      margin:0;
+      text-align: center;
+      justify-content: center;
+}
+ .join-button {
     background: black;
     box-shadow: 5px 5px 0 #941313;
     color: white;
+  line-height: 20px;
+
   }
   .join-button:hover {
     background: #941313;
@@ -381,30 +378,28 @@ padding-left: 100px;
     font-weight: bold;
     text-shadow: 1px 1px 0 black;
   }
-
-  @media screen and (max-width: 640px) {
-    .whole1 {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-    .profile-img {
-      vertical-align: top;
-      display: block;
-      margin: auto;
-      padding-top: 50px;
-      padding-right: 120px;
-    }
-    .ready {
-      display: inline;
-      padding:0;
-      margin:0;
-    }
-    .whole {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+/*LARGE SCREENS*/
+@media screen and (min-width: 800px) {
+  .whole {
+  display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
+  .further h1 {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .profile-img {
+    float: center;
+  }
+ 
+.ready {
+display: flex;
+}
+}
+
 
  /*CONTACT*/
 
