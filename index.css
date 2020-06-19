@@ -389,6 +389,9 @@ padding-left: 100px;
       text-align: center;
     }
     .profile-img {
+      vertical-align: top;
+      display: block;
+      margin: auto;
       padding-top: 50px;
       padding-right: 120px;
     }
