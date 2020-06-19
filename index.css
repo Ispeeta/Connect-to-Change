@@ -383,10 +383,15 @@ padding-left: 100px;
   }
 
   @media screen and (max-width: 640px) {
+    .whole1 {
+        display: table-cell;
+        vertical-align: middle;
+    }
     .profile_img {
-      display: block;
-      margin: auto;
-      vertical-align: top;
+      vertical-align: top; 
+      display: table;
+      margin: 0 auto;
+      text-align: center;
     }
     .ready {
       display: inline;
