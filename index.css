@@ -386,6 +386,7 @@ padding-left: 100px;
     .profile_img {
       display: block;
       margin: auto;
+      vertical-align: top;
     }
     .ready {
       display: inline;
