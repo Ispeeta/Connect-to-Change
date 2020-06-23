@@ -225,7 +225,19 @@
         text-align: right;
     }
   }
-
+  @media only screen and (max-device-width: 1366px) { 
+    #wrap { 
+      width: 100%; margin: 0; 
+     } 
+     .footer .inner_footer {
+       width: 90%;
+     }
+     .inner_footer .logo_container,
+   .inner_footer .footer_third {
+       width: 100%;
+       margin-bottom: 30px;
+     }
+    }
   /*
 @media only screen and (max-width: 600px) {
     .video-post-thumb{

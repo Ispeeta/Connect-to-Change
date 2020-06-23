@@ -677,7 +677,7 @@ display: flex;
  .btn:hover{
 color: #941313;
  }
-
+/*PHONES*/
  @media only screen and (max-width: 600px) {
    .footer .inner_footer {
      width: 90%;
@@ -688,6 +688,57 @@ color: #941313;
      margin-bottom: 30px;
    }
  }
+ /*IPADS*/
+ @media only screen and (max-device-width: 1366px) { 
+   #wrap { 
+     width: 100%; margin: 0; 
+    } 
+    .footer .inner_footer {
+      width: 90%;
+    }
+    .inner_footer .logo_container,
+  .inner_footer .footer_third {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .links {
+      padding-top: 20px;
+      display: inline;
+      justify-content: center;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .circles {
+      vertical-align: top;
+      display: block;
+      margin: auto;
+      width: 250px;
+      height: 250px;
+      margin-top: 40px;
+    }
+    .modal__inner {
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+      top: -20%;
+    }
+    .box {
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .button {
+      width: 200px;
+      height: 175px;
+      border-radius: 50%;
+      display: block;
+      vertical-align: top;
+      margin: auto;
+      margin-top: 50px;
+ }
+
+}
  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {

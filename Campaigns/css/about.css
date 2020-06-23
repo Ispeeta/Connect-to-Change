@@ -278,3 +278,16 @@ body {
   }
 }
  
+@media only screen and (max-device-width: 1366px) {
+  .coming-soon h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .coming-soon p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .tiler {
+    width: 50%;
+  }
+}
