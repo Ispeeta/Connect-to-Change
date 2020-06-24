@@ -688,7 +688,7 @@ color: #941313;
      margin-bottom: 30px;
    }
  }
- /*IPADS
+ /*IPADS*/
  @media only screen and (device-width: 768px)  { 
    #wrap { 
      width: 100%; margin: 0; 
@@ -739,9 +739,9 @@ color: #941313;
  }
 
 }
-*/
+
  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (device-width: 768px)  {
+ @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
