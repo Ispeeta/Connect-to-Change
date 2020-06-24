@@ -239,6 +239,19 @@
        width: 100%;
        margin-bottom: 30px;
      }
+     .advert-widget {
+        text-align: center;
+        justify-content: center;
+     }
+     .widget-title h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        border-bottom: 1px solid grey;
+        font-weight: bold;
+        display: block;
+      vertical-align: top;
+      margin: auto;
+    }
     }
   /*
 @media only screen and (max-width: 600px) {
