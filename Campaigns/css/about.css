@@ -278,7 +278,7 @@ body {
   }
 }
  
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (device-width: 768px)  {
   .coming-soon h1 {
     margin-right: 20px;
     margin-left: 20px;
