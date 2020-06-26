@@ -53,8 +53,9 @@ body {
 html {
     scroll-behavior: smooth;
   }
-
-  
+  html, body {
+    overflow-x: hidden;
+  }
 h1,
 h2,
 h3,
