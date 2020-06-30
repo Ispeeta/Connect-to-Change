@@ -44,6 +44,7 @@ position: absolute;
                 5px 5px #9e2a2b, 
                 6px 6px #9e2a2b;
   }
+  /*
   .yemen-drawing {
     float: right;
   transform: translateX(1%) translateY(33%);
@@ -57,6 +58,16 @@ position: absolute;
 
     animation-duration: 2s;
     animation-delay: 0s;
+  }
+  */
+  .intro img {
+    float: right;
+    display: inline;
+    padding-top: 200px;
+    padding-bottom: 30px;
+
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   .frame__title-wrap{
       padding: 1em;
@@ -206,18 +217,13 @@ a:hover {
   .intro h1 {
     font-size: 90px;
   }
-  .yemen-drawing {
+  .intro img {
     float: right;
-  transform: translateX(3%) translateY(60%);
-  width: 40%;
-  height: auto;
-  
-    right: 0;
-    bottom: 0;
-    padding-bottom: 250px;
-      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  
+    display: inline;
+    padding-top: 350px;
+    padding-bottom: 30px;
+    
+
   }
   .animated-text {
     padding-top: 20px;
@@ -274,16 +280,17 @@ and (max-width : 1024px) {
   .intro h1 {
     font-size: 70px;
   }
-  .yemen-drawing {
+  .intro img {
     float: right;
-  transform: translateX(-30%) translateY(35%);
-  
-  height: auto;
-  
-    right: 0;
-    bottom: 0;
-    padding-bottom: 250px;
-    animation-name:none;
+    display: inline;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+  .yemen-vid{
+text-align: center;
+justify-content: center;
+display: inline;
+
   }
   .filler {
     font-size: 10px;
