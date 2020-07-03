@@ -72,7 +72,7 @@ position: absolute;
   }
   */
   .frame__title-wrap{
-      padding: 1em;
+      padding: 2px;
       text-align: left;
       position: flex;
   }
