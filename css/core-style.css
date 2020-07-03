@@ -1280,4 +1280,13 @@ color: #941313;
       }
 
 
-  
+      .slider {
+   
+      
+        /* allow for scrolling */
+        overflow-x: auto;
+      
+        /* make it smooth on iOS */
+        -webkit-overflow-scrolling: touch;
+      }
+      
