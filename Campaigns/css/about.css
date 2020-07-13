@@ -165,12 +165,12 @@ body {
   }
  
   
-.tiler {
+.tiler img {
   float: left;
   display: flex;
   cursor: pointer;
   visibility: hidden;
-  width: 100%;
+  width: 33.33%;
   margin: auto;
 }
 
@@ -273,7 +273,7 @@ body {
 
 
 @media screen and (max-width: 640px) {
-  .tiler {
+  .tiler img {
     width: 100%;
   }
 }
@@ -287,7 +287,7 @@ body {
     margin-right: 50px;
     margin-left: 50px;
   }
-  .tiler {
+  .tiler img {
     width: 50%;
   }
 }
