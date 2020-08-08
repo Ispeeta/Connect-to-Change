@@ -106,7 +106,7 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr auto minmax(600px, 5fr) 1fr;
     top:0;
    /* height: 120px;*/
   }
@@ -121,7 +121,7 @@ nav a:hover {
   }
   
   nav {
-    padding-left: 10px;
+    padding-left: 20px;
    all: unset; /* this causes issues with Edge, since it's unsupported */
     
     /* the following lines are not from my video, but add Edge support */
@@ -187,7 +187,7 @@ nav a:hover {
   .intro h1 {
     color: white;
     font-family: "Raleway", "";
-    font-weight: bold;
+    line-height: 44px;
     font-size: 40px;
     padding-top: 175px;
     padding-left: 100px;
