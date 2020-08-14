@@ -392,10 +392,9 @@ hr {
     padding: 0;
 }
     .single-post-thumb {
-        text-align: center;
-        justify-content: center;
-        
-      width: 100%;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
       height: auto;
     }
     .more a {

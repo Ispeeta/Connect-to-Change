@@ -194,6 +194,12 @@
     .gazette-contact-area form {
         margin-bottom: 50px;
     }
+    .single-post-thumb {
+        text-align: center;
+        justify-content: center;
+    
+
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
