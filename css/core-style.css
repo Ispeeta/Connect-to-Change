@@ -1320,6 +1320,14 @@ color: #941313;
             width: 100%;
              height: auto;
          } 
+         .copywrite-text p {
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+        }
       }
     
       
