@@ -230,8 +230,6 @@ function check(){
            $('.slider-img div').not(currentSlide).removeClass('active');
            $(this).addClass('active').siblings().removeClass('active');
      });
-
-     jQuery('<div class="item item2"><a href="religion">Religion</a></div>').prependTo('#content');
   
   });
 
